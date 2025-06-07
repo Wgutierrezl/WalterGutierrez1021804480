@@ -25,6 +25,8 @@ namespace PruebaUnitariaBack.Service
             var productcreated=await _repo.AddNewProduct(producto);
             await _repo.SaveChangesAsync();
 
+            Console.WriteLine("Producto creado correctamente"+productcreated);
+
             return productcreated;
             
         }
