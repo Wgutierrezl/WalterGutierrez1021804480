@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebaUnitariaBack", "PruebaUnitariaBack\PruebaUnitariaBack.csproj", "{0A043A6B-BA3E-4EAA-91A2-90A940273D73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestUnitario", "TestUnitario\TestUnitario.csproj", "{3E47CAE5-545E-49CE-8487-5487471989D5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0A043A6B-BA3E-4EAA-91A2-90A940273D73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A043A6B-BA3E-4EAA-91A2-90A940273D73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A043A6B-BA3E-4EAA-91A2-90A940273D73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A043A6B-BA3E-4EAA-91A2-90A940273D73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E47CAE5-545E-49CE-8487-5487471989D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E47CAE5-545E-49CE-8487-5487471989D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E47CAE5-545E-49CE-8487-5487471989D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E47CAE5-545E-49CE-8487-5487471989D5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {63024FC3-91D3-41CC-ADB1-9519582D8825}
+	EndGlobalSection
+EndGlobal
