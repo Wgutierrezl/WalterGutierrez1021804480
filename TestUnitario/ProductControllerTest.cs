@@ -194,6 +194,14 @@ namespace TestUnitario
             // Assert
             var notFound = Assert.IsType<NotFoundObjectResult>(result);
             Assert.Equal("No se ha logrado encontrar el producto que buscas eliminar", notFound.Value);
-        }       
+        }
+
+        //Primer cambio, agregar un nuevo test, Controlador vacio
+        [Fact]
+        public void ProductoController_ExisteInstancia_DeberiaSerVerdadero()
+        {
+            // Assert
+            Assert.NotNull(_controller);
+        }
     }
 }
