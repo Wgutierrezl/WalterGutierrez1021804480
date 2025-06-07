@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Configurar el repositorio
+      # Clonar el repositorio
       - name: Checkout code
         uses: actions/checkout@v3
 
@@ -21,19 +21,19 @@ jobs:
       - name: Setup .NET
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: '8.0.x' # Cambia según la versión de .NET que uses
+          dotnet-version: '8.0.x'  # Asegura que sea compatible con tu proyecto
 
       # Restaurar dependencias
       - name: Restore dependencies
         run: dotnet restore
 
-      # Compilar el proyecto
-      - name: Build
-        run: dotnet build --no-restore --configuration Release
+      # Compilar el proyecto en modo Debug
+      - name: Build (Debug)
+        run: dotnet build --configuration Debug --no-restore
 
-      # Ejecutar pruebas unitarias
-      - name: Run tests
-        run: dotnet test --no-build --verbosity normal
+      # Ejecutar pruebas unitarias (sin usar VSTestTask)
+      - name: Run unit tests
+        run: dotnet test --configuration Debug --no-build --verbosity normal
 
   deploy:
     runs-on: ubuntu-latest
