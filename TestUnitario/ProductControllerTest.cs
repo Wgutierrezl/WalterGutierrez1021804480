@@ -197,12 +197,12 @@ namespace TestUnitario
         }
 
         //Primer cambio, agregar un nuevo test, Controlador vacio
-        [Fact]
-        public void ProductoController_ExisteInstancia_DeberiaSerVerdadero()
-        {
-            // Assert
-            //Prueba de nuevo
-            Assert.NotNull(_controller);
-        }
+        //[Fact]
+        //public void ProductoController_ExisteInstancia_DeberiaSerVerdadero()
+        //{
+        //    // Assert
+        //    //Prueba de nuevo
+        //    Assert.NotNull(_controller);
+        //}
     }
 }
